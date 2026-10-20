@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ressources - ECLD</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #263449;
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 20px 5%;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        .logo {
+            color: #092442;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #ed1c2e;
+        }
+
+        nav {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #092442;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ed1c2e;
+        }
+
+        .hero {
+            background: #092442;
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        main {
+            padding: 55px 6%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            color: #092442;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            border: 1px solid #e2e7ee;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px #09244212;
+        }
+
+        .icon {
+            background: #092442;
+            color: white;
+            text-align: center;
+            font-size: 42px;
+            padding: 24px;
+        }
+
+        .card:nth-child(even) .icon {
+            background: #ed1c2e;
+        }
+
+        .content {
+            padding: 24px;
+        }
+
+        .content h3 {
+            color: #092442;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            color: #637083;
+            margin-bottom: 14px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #f4f7fb;
+            color: #092442;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .advice {
+            margin-top: 50px;
+            padding: 35px;
+            background: #f4f7fb;
+            border-left: 5px solid #ed1c2e;
+            border-radius: 8px;
+        }
+
+        .advice h2 {
+            color: #092442;
+            margin-bottom: 12px;
+        }
+
+        .advice ul {
+            padding-left: 22px;
+        }
+
+        .callout {
+            margin-top: 40px;
+            text-align: center;
+            background: #092442;
+            color: white;
+            padding: 40px 20px;
+            border-radius: 12px;
+        }
+
+        .callout h2 {
+            margin-bottom: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ed1c2e;
+            color: white;
+            padding: 12px 24px;
+            margin-top: 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #06182c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            nav {
+                gap: 12px;
+            }
+
+            .advice {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ECLD<span>  Ensemble contre la drogue</span></div>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="objectifs.html">Objectifs</a>
+        <a href="actions.html">Nos actions</a>
+        <a href="campagnes.html">Campagnes</a>
+        <a href="ressources.html">Ressources</a>
+        <a href="temoignages.html">Témoignages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Ressources et informations</h1>
+    <p>
+        Retrouvez des informations utiles pour mieux comprendre
+        les risques liés aux drogues, prévenir les situations
+        à risque et savoir où chercher de l'aide.
+    </p>
+</div>
+
+<main>
+
+    <div class="section-title">
+        <h2>Nos ressources</h2>
+        <p>Des contenus pour apprendre, prévenir et accompagner.</p>
+    </div>
+
+    <div class="resources">
+
+        <article class="card">
+            <div class="icon">📘</div>
+            <div class="content">
+                <h3>Comprendre les drogues</h3>
+                <p>
+                    Découvrez des informations générales sur les
+                    substances, leurs effets possibles et les risques
+                    pour la santé.
+                </p>
+                <span class="tag">Information</span>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="icon">🧠</div>
+            <div class="content">
+                <h3>Santé mentale et bien-être</h3>
+                <p>
+                    Apprenez à reconnaître le stress, à parler
+                    de vos difficultés et à chercher un soutien adapté.
+                </p>
+                <span class="tag">Bien-être</span>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="icon">👨‍👩‍👧</div>
+            <div class="content">
+                <h3>Guide pour les familles</h3>
+                <p>
+                    Favorisez le dialogue, l'écoute et un accompagnement
+                    sans jugement avec les jeunes.
+                </p>
+                <span class="tag">Familles</span>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="icon">🏫</div>
+            <div class="content">
+                <h3>Ressources éducatives</h3>
+                <p>
+                    Des idées de discussions, d'ateliers et d'activités
+                    de prévention pour les écoles et les associations.
+                </p>
+                <span class="tag">Éducation</span>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="icon">🤝</div>
+            <div class="content">
+                <h3>Accompagnement</h3>
+                <p>
+                    Encouragez les personnes en difficulté à parler
+                    à un professionnel de santé ou à un service spécialisé.
+                </p>
+                <span class="tag">Soutien</span>
+            </div>
+        </article>
+
+        <article class="card">
+            <div class="icon">🛡️</div>
+            <div class="content">
+                <h3>Prévenir les risques</h3>
+                <p>
+                    Développez des habitudes positives : activités
+                    sportives, relations de confiance et demande d'aide
+                    au bon moment.
+                </p>
+                <span class="tag">Prévention</span>
+            </div>
+        </article>
+
+    </div>
+
+    <section class="advice">
+        <h2>Quelques conseils importants</h2>
+
+        <ul>
+            <li>Vérifiez les informations auprès de sources fiables.</li>
+            <li>Évitez de juger une personne qui rencontre des difficultés.</li>
+            <li>Encouragez le dialogue avec un adulte de confiance ou un professionnel de santé.</li>
+            <li>En cas de danger immédiat, contactez les services d'urgence de votre région.</li>
+        </ul>
+    </section>
+
+    <section class="callout">
+        <h2>Besoin d'informations supplémentaires ?</h2>
+        <p>
+            Contactez notre équipe pour poser une question
+            ou proposer une activité de sensibilisation.
+        </p>
+
+        <a href="contact.html" class="btn">Nous contacter</a>
+    </section>
+
+</main>
+
+<footer>
+    <p><strong>ECLD</strong> — Ensemble contre la drogue</p>
+    <p>Prévenir • Informer • Accompagner</p>
+    <p>© 2026 ECLD</p>
+</footer>
+
+</body>
+</html>

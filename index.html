@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECLD - Ensemble contre la drogue</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #102d4d;
+        background-color: #f4f7fb;
+      }
+
+      header {
+        background-color: #092442;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 30px;
+      }
+
+      header h1 span {
+        color: #ed1c2e;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 8px;
+        font-weight: bold;
+      }
+
+      nav a:hover {
+        color: #ed1c2e;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 80px 20px;
+        color: white;
+        background: linear-gradient(135deg, #092442, #17608b);
+      }
+
+      .hero h2 {
+        font-size: 55px;
+        margin: 10px;
+      }
+
+      .hero p {
+        font-size: 23px;
+      }
+
+      .slogan {
+        color: #ff3949;
+        font-weight: bold;
+        font-size: 25px;
+      }
+
+      .button {
+        display: inline-block;
+        background-color: #ed1c2e;
+        color: white;
+        padding: 13px 25px;
+        margin-top: 15px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      section {
+        padding: 40px 8%;
+      }
+
+      section h2 {
+        text-align: center;
+        color: #092442;
+        font-size: 30px;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        background-color: white;
+        width: 220px;
+        padding: 25px;
+        text-align: center;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px #00000015;
+      }
+
+      .card h3 {
+        color: #ed1c2e;
+      }
+
+      .about {
+        background-color: white;
+        text-align: center;
+        line-height: 1.8;
+      }
+
+      .campaign {
+        text-align: center;
+        background-color: #092442;
+        color: white;
+      }
+
+      .campaign h2 {
+        color: white;
+      }
+
+      .campaign strong {
+        color: #ff3949;
+        font-size: 35px;
+      }
+
+      footer {
+        background-color: #06182b;
+        color: white;
+        text-align: center;
+        padding: 25px;
+      }
+
+      @media (max-width: 700px) {
+        header {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        nav {
+          text-align: center;
+          line-height: 2.5;
+        }
+
+        .hero h2 {
+          font-size: 38px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>ECLD <span>🚫</span></h1>
+      <p></p>
+      <nav>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="objectifs.html">Objectifs</a>
+        <a href="campagnes.html">Campagnes</a>
+        <a href="contact.html">Contact</a>
+        <a href="page.html">réseaux sociaux</a>
+      </nav>
+    </header>
+
+    <div class="hero" id="accueil">
+      <h2>ECLD</h2>
+      <p>Ensemble contre la drogue</p>
+
+      <div class="slogan">Ensemble, nous sommes plus forts !</div>
+
+      <p>
+        Informer, prévenir et accompagner pour construire un avenir sain et sans
+        drogue.
+      </p>
+
+      <a href="objectifs" class="button"> Découvrir nos objectifs </a>
+    </div>
+
+    <section id="apropos" class="about">
+      <h2>À propos de nous</h2>
+
+      <p>
+        ECLD (Ensemble contre la drogue) est un projet associatif qui vise à
+        sensibiliser les jeunes et la société aux dangers de la drogue. Notre
+        mission est de prévenir les comportements à risque, d'encourager la
+        solidarité et d'accompagner les personnes en difficulté.
+      </p>
+    </section>
+
+    <section id="objectifs">
+      <h2>Nos objectifs</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Sensibiliser</h3>
+          <p>
+            Informer les jeunes sur les dangers de la drogue grâce à des
+            campagnes éducatives.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Prévenir</h3>
+          <p>
+            Encourager les comportements responsables et promouvoir un mode de
+            vie sain.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Soutenir</h3>
+          <p>
+            Accompagner les personnes en difficulté avec écoute et solidarité.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Agir</h3>
+          <p>Organiser des activités éducatives, sportives et culturelles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="campagnes" class="campaign">
+      <h2>Notre campagne de sensibilisation</h2>
+
+      <p>Campagne : « La drogue détruit des rêves, choisissons la vie »</p>
+
+      <strong>NON À LA DROGUE</strong>
+
+      <p>OUI À LA VIE !</p>
+
+      <p>
+        Nos moyens : affiches, réseaux sociaux, vidéos, conférences et
+        interventions dans les établissements scolaires.
+      </p>
+    </section>
+
+    <section>
+      <h2>Notre engagement</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Un esprit plus fort</h3>
+          <p>Faire les bons choix pour son avenir.</p>
+        </div>
+
+        <div class="card">
+          <h3>Une santé meilleure</h3>
+          <p>Protéger son corps et son bien-être.</p>
+        </div>
+
+        <div class="card">
+          <h3>Un avenir plus sûr</h3>
+          <p>Construire une vie pleine d'espoir.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <h2>ECLD - Ensemble contre la drogue</h2>
+
+      <p>Ensemble, contre la drogue, pour un avenir meilleur !</p>
+
+      <p>© 2026 ECLD - Tous droits réservés</p>
+    </footer>
+  </body>
+</html>

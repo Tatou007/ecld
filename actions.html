@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos actions - ECLD</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #173653;
+        }
+
+        header {
+            background: #092442;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ed1c2e;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #092442, #175b86);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: 40px auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            border-top: 5px solid #ed1c2e;
+            box-shadow: 0 4px 12px #00000015;
+        }
+
+        .card h3 {
+            color: #092442;
+        }
+
+        .card p {
+            line-height: 1.7;
+        }
+
+        .icon {
+            font-size: 35px;
+        }
+
+        .message {
+            background: #092442;
+            color: white;
+            text-align: center;
+            padding: 35px;
+            margin-top: 35px;
+            border-radius: 12px;
+        }
+
+        .message h2 {
+            color: white;
+        }
+
+        .message strong {
+            color: #ff3949;
+            font-size: 28px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ed1c2e;
+            color: white;
+            padding: 12px 22px;
+            margin-top: 15px;
+            border-radius: 25px;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #06182b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 750px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ECLD 🚫</h1>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="objectifs.html">Objectifs</a>
+        <a href="actions.html">Nos actions</a>
+        <a href="ressources.html">Ressources</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Nos actions</h2>
+    <p>Informer, prévenir et agir ensemble contre la drogue.</p>
+</section>
+
+<main>
+
+    <h2 style="text-align:center;">Nos activités</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">📢</div>
+            <h3>Campagnes de sensibilisation</h3>
+            <p>
+                Créer des affiches, des vidéos et des messages
+                éducatifs pour informer les jeunes sur les
+                dangers de la drogue.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h3>Ateliers éducatifs</h3>
+            <p>
+                Organiser des rencontres et des conférences
+                pour expliquer les risques liés aux drogues
+                et répondre aux questions des jeunes.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤝</div>
+            <h3>Écoute et soutien</h3>
+            <p>
+                Encourager les personnes en difficulté à
+                demander de l'aide et les orienter vers
+                des professionnels compétents.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚽</div>
+            <h3>Activités sportives</h3>
+            <p>
+                Promouvoir le sport et les loisirs sains
+                pour développer la confiance, le bien-être
+                et l'esprit d'équipe.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏫</div>
+            <h3>Actions dans les écoles</h3>
+            <p>
+                Sensibiliser les élèves grâce à des activités
+                éducatives et des journées de prévention.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📱</div>
+            <h3>Campagnes numériques</h3>
+            <p>
+                Publier des conseils, des affiches et des
+                informations de prévention sur les réseaux sociaux.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="message">
+        <h2>Notre engagement</h2>
+
+        <p>
+            Chaque action compte pour protéger les jeunes
+            et construire un avenir meilleur.
+        </p>
+
+        <strong>NON À LA DROGUE, OUI À LA VIE !</strong>
+
+        <br>
+
+        <a href="contact.html" class="button">
+            Nous contacter
+        </a>
+    </div>
+
+</main>
+
+<footer>
+    <h3>ECLD - Ensemble contre la drogue</h3>
+    <p>Ensemble, nous sommes plus forts !</p>
+    <p>© 2026 ECLD - Tous droits réservés</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!-- في وسط الـ Footer -->
+<<!doctype html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actualités - ECLD</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS Styles -->
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2563eb;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #1d4ed8;
+      }
+
+      /* Card Hover Animation */
+      article {
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      article:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Article Image Zoom on Hover */
+      article .overflow-hidden img {
+        transition: transform 0.5s ease;
+      }
+      article:hover .overflow-hidden img {
+        transform: scale(1.08);
+      }
+
+      /* Instagram Icon Special Hover Effect */
+      .instagram-link {
+        transition:
+          color 0.3s ease,
+          transform 0.3s ease;
+      }
+      .instagram-link:hover {
+        color: #e1306c !important; /* Instagram Pink Brand Color */
+        transform: translateY(-2px) scale(1.1);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <div
+            class="bg-blue-600 text-white font-bold text-xl px-3 py-2 rounded-lg"
+          >
+            ECLD
+          </div>
+          <span class="text-xl font-bold tracking-tight text-gray-900"></span>
+            Ensemble contre la drogue</span
+          >
+        </div>
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex space-x-8 items-center font-medium">
+          <a
+            href="index.html"
+            class="text-gray-600 hover:text-blue-600 transition"
+            >Accueil</a
+          >
+          <a
+            href="apropos.html"
+            class="text-gray-600 hover:text-blue-600 transition"
+            >À propos</a
+          >
+          <a
+            href="actualites.html"
+            class="text-blue-600 font-semibold border-b-2 border-blue-600 pb-1"
+            >Actualités</a
+          >
+          <a
+            href="projets.html"
+            class="text-gray-600 hover:text-blue-600 transition"
+            >Projets</a
+          >
+          <a
+            href="contact.html"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+            >Contact</a
+          >
+        </nav>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="menu-btn" class="text-gray-600 focus:outline-none">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu Dropdown -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t px-4 pt-2 pb-4 space-y-2"
+      >
+        <a href="index.html" class="block py-2 text-gray-600">Accueil</a>
+        <a href="apropos.html" class="block py-2 text-gray-600">À propos</a>
+        <a href="actualites.html" class="block py-2 text-blue-600 font-semibold"
+          >Actualités</a
+        >
+        <a href="projets.html" class="block py-2 text-gray-600">Projets</a>
+        <a href="contact.html" class="block py-2 text-blue-600 font-semibold"
+          >Contact</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-16"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl font-extrabold sm:text-5xl tracking-tight mb-4">
+          Nos Actualités
+        </h1>
+        <p class="text-lg text-blue-100 max-w-2xl mx-auto">
+          Restez informés des dernières activités, rapports, conférences et
+          communiqués de l'ECLD.
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content & Filter Section -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+      <!-- Filters & Search Bar -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center mb-10 gap-4"
+      >
+        <div class="flex flex-wrap gap-2">
+          <button
+            class="px-4 py-2 bg-blue-600 text-white rounded-full text-sm font-medium shadow-sm transition"
+          >
+            Tous
+          </button>
+          <button
+            class="px-4 py-2 bg-white text-gray-600 hover:bg-gray-100 rounded-full text-sm font-medium border transition"
+          >
+            Conférences
+          </button>
+          <button
+            class="px-4 py-2 bg-white text-gray-600 hover:bg-gray-100 rounded-full text-sm font-medium border transition"
+          >
+            Rapports
+          </button>
+          <button
+            class="px-4 py-2 bg-white text-gray-600 hover:bg-gray-100 rounded-full text-sm font-medium border transition"
+          >
+            Événements
+          </button>
+        </div>
+        <div class="relative w-full md:w-72">
+          <input
+            type="text"
+            placeholder="Rechercher une actualité..."
+            class="w-full pl-10 pr-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+          />
+          <i class="fa-solid fa-search absolute left-3 top-3 text-gray-400"></i>
+        </div>
+      </div>
+
+      <!-- News Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Article Card 1 -->
+        <article
+          class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col"
+        >
+          <div class="h-48 bg-blue-200 relative overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=600&q=80"
+              alt="Conference"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="absolute top-3 right-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full font-semibold"
+              >Conférence</span
+            >
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-xs text-gray-500 mb-2 space-x-2">
+              <i class="fa-regular fa-calendar"></i>
+              <span>18 Octobre 2026</span>
+            </div>
+            <h2
+              class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition"
+            >
+              Conférence Annuelle sur les Droits Humains à Bruxelles
+            </h2>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">
+              L'ECLD organise sa table ronde annuelle réunissant des experts
+              internationaux pour discuter des réformes juridiques récentes.
+            </p>
+            <a
+              href="article-detail.html"
+              class="inline-flex items-center text-blue-600 font-semibold text-sm hover:underline"
+            >
+              Lire la suite <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article Card 2 -->
+        <article
+          class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col"
+        >
+          <div class="h-48 bg-blue-200 relative overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
+              alt="Rapport"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="absolute top-3 right-3 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-semibold"
+              >Rapport</span
+            >
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-xs text-gray-500 mb-2 space-x-2">
+              <i class="fa-regular fa-calendar"></i>
+              <span>05 Octobre 2026</span>
+            </div>
+            <h2
+              class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition"
+            >
+              Publication du nouveau rapport sur le développement durable
+            </h2>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">
+              Découvrez notre dernière analyse approfondie portant sur l'impact
+              des politiques environnementales en Méditerranée.
+            </p>
+            <a
+              href="article-detail.html"
+              class="inline-flex items-center text-blue-600 font-semibold text-sm hover:underline"
+            >
+              Lire la suite <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Article Card 3 -->
+        <article
+          class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col"
+        >
+          <div class="h-48 bg-blue-200 relative overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80"
+              alt="Atelier"
+              class="w-full h-full object-cover"
+            />
+            <span
+              class="absolute top-3 right-3 bg-purple-600 text-white text-xs px-3 py-1 rounded-full font-semibold"
+              >Atelier</span
+            >
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex items-center text-xs text-gray-500 mb-2 space-x-2">
+              <i class="fa-regular fa-calendar"></i>
+              <span>28 Septembre 2026</span>
+            </div>
+            <h2
+              class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition"
+            >
+              Atelier de formation pour les jeunes leaders
+            </h2>
+            <p class="text-gray-600 text-sm mb-4 flex-grow">
+              Un programme intensif de trois jours axé sur la gouvernance
+              démocratique et la gestion de projets associatifs.
+            </p>
+            <a
+              href="article-detail.html"
+              class="inline-flex items-center text-blue-600 font-semibold text-sm hover:underline"
+            >
+              Lire la suite <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pagination -->
+      <div class="mt-12 flex justify-center items-center space-x-2">
+        <button
+          class="px-4 py-2 border rounded-lg bg-white text-gray-500 hover:bg-gray-50 disabled:opacity-50"
+          disabled
+        >
+          <i class="fa-solid fa-chevron-left mr-1"></i> Précédent
+        </button>
+        <button
+          class="px-4 py-2 border rounded-lg bg-blue-600 text-white font-semibold"
+        >
+          1
+        </button>
+        <button
+          class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-50"
+        >
+          2
+        </button>
+        <button
+          class="px-4 py-2 border rounded-lg bg-white text-gray-700 hover:bg-gray-50"
+        >
+          Suivant <i class="fa-solid fa-chevron-right ml-1"></i>
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-8 mt-16">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8"
+      >
+        <!-- Col 1 -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">ECLD</h3>
+          <p class="text-gray-400 text-sm">
+            Tunisian Center for Law and Development est une organisation dédiée
+            à la promotion de l'État de droit et du développement durable.
+          </p>
+        </div>
+        <!-- Col 2 -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Liens rapides</h3>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>
+              <a href="index.html" class="hover:text-white transition"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a href="apropos.html" class="hover:text-white transition"
+                >À propos</a
+              >
+            </li>
+            <li>
+              <a href="actualites.html" class="hover:text-white transition"
+                >Actualités</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="hover:text-white transition"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- Col 3 -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact</h3>
+          <p class="text-gray-400 text-sm mb-2">
+            <i class="fa-solid fa-envelope mr-2"></i> ecldcontact@gmail.com
+          </p>
+          <p class="text-gray-400 text-sm">
+            <i class="fa-solid fa-location-dot mr-2"></i> Ariana, Tunisie
+          </p>
+        </div>
+        <!-- Col 4: Instagram -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Suivez-nous</h3>
+          <div class="flex space-x-4">
+            <a
+              href="https://www.instagram.com/ensemble_contre_la_drogue?obrf=MWwzcjRjdmFrNWYzeg=="
+              target="_blank"
+              rel="noopener noreferrer"
+              class="instagram-link text-gray-400 text-2xl"
+              title="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-800 text-center pt-6 text-sm text-gray-500"
+      >
+        &copy; 2026 ECLD. Tous droits réservés.
+      </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ECLD</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #263449;
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            padding: 20px 5%;
+            box-shadow: 0 2px 10px #ddd;
+        }
+
+        .logo {
+            color: #092442;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #ed1c2e;
+        }
+
+        nav {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #092442;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ed1c2e;
+        }
+
+        .hero {
+            background: #092442;
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        main {
+            padding: 55px 6%;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .intro h2 {
+            color: #092442;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .info, .form-box {
+            padding: 28px;
+            border: 1px solid #e2e7ee;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #09244212;
+        }
+
+        .info {
+            background: #f4f7fb;
+        }
+
+        .info h3, .form-box h3 {
+            color: #092442;
+            margin-bottom: 18px;
+        }
+
+        .info-item {
+            margin-bottom: 22px;
+        }
+
+        .info-item strong {
+            display: block;
+            color: #092442;
+            margin-bottom: 4px;
+        }
+
+        .info-item p {
+            color: #637083;
+        }
+
+        label {
+            display: block;
+            margin: 14px 0 6px;
+            font-weight: bold;
+            color: #092442;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd3df;
+            border-radius: 6px;
+            font: inherit;
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 13px 24px;
+            border: none;
+            border-radius: 6px;
+            background: #ed1c2e;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #c91625;
+        }
+
+        .note {
+            margin-top: 12px;
+            color: #637083;
+            font-size: 13px;
+        }
+
+        footer {
+            background: #06182c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 750px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">ECLD<span>Ensemble contre la drogue</span></div>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="objectifs.html">Objectifs</a>
+        <a href="actions.html">Nos actions</a>
+        <a href="campagnes.html">Campagnes</a>
+        <a href="ressources.html">Ressources</a>
+        <a href="temoignages.html">Témoignages</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Contactez-nous</h1>
+    <p>
+        Une question, une idée ou envie de participer à nos actions ?
+        Nous sommes à votre écoute.
+    </p>
+</div>
+
+<main>
+    <div class="intro">
+        <h2>Restons en contact</h2>
+        <p>
+            Votre message compte. Ensemble, faisons avancer
+            la prévention et la sensibilisation.
+        </p>
+    </div>
+
+    <div class="contact-layout">
+
+        <section class="info">
+            <h3>Nos coordonnées</h3>
+
+            <div class="info-item">
+                <strong>📍 Notre mission</strong>
+                <p>
+                    Sensibiliser, informer et encourager la prévention
+                    contre les dangers de la drogue.
+                </p>
+            </div>
+
+            <div class="info-item">
+                <strong>✉️ E-mail</strong>
+                <p>ecldcontact2@gmail.com</p>
+            </div>
+
+            <div class="info-item">
+                <strong>🤝 Nous rejoindre</strong>
+                <p>
+                    Contactez-nous pour proposer un partenariat,
+                    participer à une campagne ou organiser
+                    une activité de sensibilisation.
+                </p>
+            </div>
+
+            <div class="info-item">
+                <strong>💬 Besoin d'aide ?</strong>
+                <p>
+                    Si vous ou un proche êtes en difficulté,
+                    adressez-vous à un professionnel de santé
+                    ou à un service d'aide qualifié.
+                </p>
+            </div>
+        </section>
+
+        <section class="form-box">
+            <h3>Envoyez-nous un message</h3>
+
+            <form id="contactForm">
+
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom"
+                       placeholder="Votre nom" required>
+
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email"
+                       placeholder="exemple@email.com" required>
+
+                <label for="sujet">Sujet du message</label>
+                <select id="sujet" required>
+                    <option value="">-- Choisissez un sujet --</option>
+                    <option>Demande d'information</option>
+                    <option>Participation à une campagne</option>
+                    <option>Partenariat</option>
+                    <option>Proposition d'activité</option>
+                    <option>Autre</option>
+                </select>
+
+                <label for="message">Votre message</label>
+                <textarea id="message"
+                          placeholder="Écrivez votre message ici..."
+                          required></textarea>
+
+                <button type="submit">Envoyer le message</button>
+
+                <p class="note">
+                    Formulaire de démonstration.
+                </p>
+            </form>
+
+            <p id="confirmation" role="status"></p>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <p><strong>ECLD</strong> — Ensemble contre la drogue</p>
+    <p>Prévenir • Informer • Accompagner</p>
+    <p>© 2026 ECLD</p>
+</footer>
+
+<script>
+    document.getElementById("contactForm").addEventListener(
+        "submit", function(event) {
+            event.preventDefault();
+
+            document.getElementById("confirmation").textContent =
+                "Merci pour votre message ! Ce formulaire est une démonstration et ne transmet pas encore les données.";
+
+            this.reset();
+        }
+    );
+</script>
+
+</body>
+</html>

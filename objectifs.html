@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nos objectifs - ECLD</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            color: #173653;
+        }
+
+        header {
+            background-color: #092442;
+            color: white;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        header h1 span {
+            color: #ed1c2e;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ed1c2e;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #092442, #175b86);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 35px;
+            line-height: 1.8;
+        }
+
+        .intro h2 {
+            color: #092442;
+            font-size: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000012;
+            border-top: 5px solid #ed1c2e;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 40px;
+        }
+
+        .card h3 {
+            color: #092442;
+            font-size: 25px;
+        }
+
+        .card p {
+            line-height: 1.8;
+        }
+
+        .card ul {
+            line-height: 2;
+            padding-left: 20px;
+        }
+
+        .sensibiliser {
+            border-top-color: #e51e2a;
+        }
+
+        .prevenir {
+            border-top-color: #17608b;
+        }
+
+        .soutenir {
+            border-top-color: #168348;
+        }
+
+        .agir {
+            border-top-color: #f59b13;
+        }
+
+        .message {
+            background-color: #092442;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-radius: 12px;
+        }
+
+        .message h2 {
+            color: white;
+        }
+
+        .message strong {
+            color: #ff3949;
+            font-size: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ed1c2e;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #06182b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+                line-height: 2.5;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ECLD <span>🚫</span></h1>
+
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="apropos.html">À propos</a>
+            <a href="objectifs.html">Objectifs</a>
+            <a href="actions.html">Nos actions</a>
+            <a href="ressources.html">Ressources</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <section class="hero">
+        <h2>Nos objectifs</h2>
+
+        <p>
+            Ensemble contre la drogue, pour une vie meilleure.
+        </p>
+    </section>
+
+
+    <main>
+
+        <div class="intro">
+            <h2>Nos engagements</h2>
+
+            <p>
+                ECLD a pour objectif de lutter contre les dangers
+                de la drogue à travers la sensibilisation,
+                la prévention, le soutien et l'action.
+                Nous voulons encourager les jeunes à faire
+                des choix responsables pour protéger leur santé
+                et construire leur avenir.
+            </p>
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card sensibiliser">
+
+                <div class="icon">📢</div>
+
+                <h3>Sensibiliser</h3>
+
+                <p>
+                    Informer les jeunes sur les dangers de la drogue
+                    grâce à des campagnes éducatives.
+                </p>
+
+                <ul>
+                    <li>Organiser des campagnes de sensibilisation.</li>
+                    <li>Partager des affiches et des vidéos éducatives.</li>
+                    <li>Expliquer les risques liés à la consommation.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="card prevenir">
+
+                <div class="icon">🛡️</div>
+
+                <h3>Prévenir</h3>
+
+                <p>
+                    Encourager les comportements responsables
+                    et aider les jeunes à éviter les situations à risque.
+                </p>
+
+                <ul>
+                    <li>Organiser des ateliers éducatifs.</li>
+                    <li>Promouvoir le sport et les loisirs sains.</li>
+                    <li>Encourager les bons choix au quotidien.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="card soutenir">
+
+                <div class="icon">🤝</div>
+
+                <h3>Soutenir</h3>
+
+                <p>
+                    Encourager les personnes en difficulté à demander
+                    de l'aide et leur offrir une écoute sans jugement.
+                </p>
+
+                <ul>
+                    <li>Promouvoir l'entraide et la solidarité.</li>
+                    <li>Orienter vers des professionnels compétents.</li>
+                    <li>Soutenir les familles concernées.</li>
+                </ul>
+
+            </div>
+
+
+            <div class="card agir">
+
+                <div class="icon">🌟</div>
+
+                <h3>Agir</h3>
+
+                <p>
+                    Mobiliser les jeunes et la société pour construire
+                    un environnement plus sain et solidaire.
+                </p>
+
+                <ul>
+                    <li>Organiser des événements de prévention.</li>
+                    <li>Collaborer avec les écoles et les associations.</li>
+                    <li>Développer des projets collectifs.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="message">
+
+            <h2>Notre message pour tous</h2>
+
+            <p>
+                Chaque personne mérite un avenir sain,
+                plein d'espoir et de possibilités.
+            </p>
+
+            <strong>NON À LA DROGUE, OUI À LA VIE !</strong>
+
+            <br>
+
+            <a href="actions.html" class="button">
+                Découvrir nos actions
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <h3>ECLD - Ensemble contre la drogue</h3>
+
+        <p>Ensemble, nous sommes plus forts !</p>
+
+        <p>© 2026 ECLD - Tous droits réservés</p>
+    </footer>
+
+</body>
+</html>
